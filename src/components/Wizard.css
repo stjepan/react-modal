@@ -1,0 +1,34 @@
+.wizard {
+    height: 100%;
+    width: 100%;
+}
+
+.step {
+    display: none;
+    position: relative;
+    height: 100%;
+}
+
+.step.active {
+    display: block;
+}
+
+.step-actions {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background: grey;
+}
+
+    .step-actions button {
+        margin: 1em;
+    }
+
+.close-account {
+    color: green;
+}
+
+.submit-close-account {
+    color: blue;
+}

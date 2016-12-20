@@ -91,9 +91,9 @@ export class Wizard extends Component {
                         reset: this.reset
                     }
 
-                    if (index < steps.length - 1) {
-                        wizard.next = this.next;
-                    }
+                    wizard.next = index < steps.length - 1
+                        ? this.next
+                        : this.reset;
 
                     return React.cloneElement(step, {
                         className: classes.join(' '),
